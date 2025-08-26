@@ -42,15 +42,15 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather.html";
-            },},{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
-          description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
+            },},{id: "news-a-long-announcement-with-details",
           title: 'A long announcement with details',
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_2.html";
-            },},{id: "news-received-ph-d-in-engineering-from-the-school-of-engineering-brown-university",
+            },},{id: "news-successfully-defending-my-phd-thesis-approximate-computing-techniques-from-logic-synthesis-to-deep-learning",
+          title: 'Successfully defending my PhD thesis Approximate Computing Techniques: From Logic Synthesis to Deep...',
+          description: "",
+          section: "News",},{id: "news-received-ph-d-in-engineering-from-the-school-of-engineering-brown-university",
           title: 'Received Ph.D. in Engineering from the School of Engineering, Brown University.',
           description: "",
           section: "News",},{id: "projects-project-1",
