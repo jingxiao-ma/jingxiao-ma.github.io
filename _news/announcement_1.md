@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Successfully defending my PhD thesis *Approximate Computing Techniques: From Logic Synthesis to Deep Learning*.
+Successfully defended Ph.D. thesis *Approximate Computing Techniques: From Logic Synthesis to Deep Learning*.
