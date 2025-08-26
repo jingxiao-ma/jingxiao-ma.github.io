@@ -2,11 +2,11 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: blank # the website title (if blank, full name will be used instead)
-first_name: >
-  Jingxiao Ma
+title: >
+  Jingxiao Ma # the website title (if blank, full name will be used instead)
+first_name: Jingxiao
 middle_name:
-last_name:
+last_name: Ma
 contact_note: >
   You can even add a little note about which of these is the best way to reach you.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
@@ -45,7 +45,7 @@ repo_trophies:
 # -----------------------------------------------------------------------------
 
 navbar_fixed: true
-footer_fixed: true
+footer_fixed: false
 search_enabled: false
 socials_in_search: true
 posts_in_search: true
