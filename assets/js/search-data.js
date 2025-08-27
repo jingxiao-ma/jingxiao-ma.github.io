@@ -62,8 +62,8 @@ ninja.data = [{
           description: "a project with a background image and giscus comments",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project.html";
-            },},{id: "projects-hardware-metric-analysis-using-llms",
-          title: 'Hardware Metric Analysis using LLMs',
+            },},{id: "projects-hardware-metric-reasoning-using-llms",
+          title: 'Hardware Metric Reasoning using LLMs',
           description: "A benchmark for Verilog code metric reasoning using fine-tuned Large Language Models (LLMs)",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_research.html";
