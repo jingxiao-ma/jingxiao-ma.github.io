@@ -42,13 +42,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather.html";
-            },},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
-          description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_2.html";
             },},{id: "news-successfully-defended-ph-d-thesis-approximate-computing-techniques-from-logic-synthesis-to-deep-learning",
           title: 'Successfully defended Ph.D. thesis Approximate Computing Techniques: From Logic Synthesis to Deep Learning....',
+          description: "",
+          section: "News",},{id: "news-by-co-author-manar-abdelatty-presented-our-work-metrex-a-benchmark-for-verilog-code-metric-reasoning-using-llms-at-the-asia-and-south-pacific-design-automation-conference-aspdac-25",
+          title: '(By co-author Manar Abdelatty) Presented our work MetRex: A Benchmark for Verilog Code...',
           description: "",
           section: "News",},{id: "news-received-ph-d-in-engineering-from-the-school-of-engineering-brown-university",
           title: 'Received Ph.D. in Engineering from the School of Engineering, Brown University.',
