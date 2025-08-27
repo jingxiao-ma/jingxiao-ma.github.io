@@ -72,6 +72,11 @@ ninja.data = [{
           description: "a project that redirects to another website",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project.html";
+            },},{id: "projects-low-precision-training-of-deep-neural-network",
+          title: 'Low-Precision Training of Deep Neural Network',
+          description: "An INT8-quantized training framework built upon the Forward-Forward algorithm, enabling efficient and memory-light deep learning training on resource-constrained edge devices",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/3_research.html";
             },},{id: "projects-project-4",
           title: 'project 4',
           description: "another without an image",
