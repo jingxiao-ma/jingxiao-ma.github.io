@@ -30,7 +30,7 @@ Backpropagation has been the standard for DNN training but is inefficient for re
 
 Recently, Hinton’s Forward-Forward (FF) algorithm was introduced as a training paradigm that eliminates the backward pass by replacing it with an additional forward pass. The FF algorithm trains each layer greedily using “positive” and “negative” examples and a local goodness function, thereby avoiding the need to store global computational graphs. This makes FF naturally appealing for edge environments where memory efficiency is paramount. Yet, vanilla FF faces limitations: it struggles with convergence, scales poorly to deep architectures, and performs suboptimally with complex components like residual blocks.
 
-<div class="row">
+<div class="row justify-content-center">
     <div class="col-6 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/BP_vs_FF.png" title="BP_vs_FF" class="img-fluid rounded z-depth-1" %}
     </div>
