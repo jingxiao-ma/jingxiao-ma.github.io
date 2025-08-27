@@ -1,37 +1,6 @@
 ---
 ---
 
-
-@article{ma2021approximate,
-  abbr={IEEE TCAD},
-  selected={true},
-  title={Approximate logic synthesis using Boolean matrix factorization},
-  author={Ma, Jingxiao and Hashemi, Soheil and Reda, Sherief},
-  doi={10.1109/TCAD.2021.3054603},
-  html={https://ieeexplore.ieee.org/abstract/document/9335989},
-  journal={IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems},
-  volume={41},
-  number={1},
-  pages={15--28},
-  year={2021},
-  publisher={IEEE},
-  abstract={Approximate computing is an emerging computing paradigm offering benefits in hardware metrics, such as design area and power consumption, by relaxing the requirement for full accuracy. In circuit design, a major challenge is to synthesize approximate circuits automatically from input exact circuits requiring minimal expert input. In this work, we present a method for approximate logic synthesis based on the Boolean matrix factorization, where an arbitrary input circuit can be approximated in a controlled fashion. Our methodology enables automatic computation of the dominant elements, bases, of the truth table of the circuit, and later combines the bases to approximate the original truth table. Such compression can reduce the complexity of the hardware implementation significantly, while introducing variable degrees of inaccuracy. Furthermore, in our approach, the factorization algorithm can be fine tuned as required by the application, to effectively improve control over degree of approximation. In this work, we provide a unified approach enabling the factorization algorithm to utilize semiring algebra, field algebra, and a combination of both for truth table factorization. In addition, we provide an automatic circuit partitioning approach and a design space exploration heuristic to navigate the search space. We implement our methodology using a full stack of open-source tools, and thoroughly evaluate our methodology on a number of representative circuits showcasing the benefits of our proposed methodology for approximate logic synthesis. Finally, we compare our methodology against an existing library of approximate designs and demonstrate state-of-the-art performance.}
-}
-
-@inproceedings{abdelatty2025metrex,
-  abbr={ASPDAC},
-  title={Metrex: A benchmark for verilog code metric reasoning using llms},
-  selected={true},
-  author={Abdelatty, Manar and Ma, Jingxiao and Reda, Sherief},
-  doi={10.1145/3658617.3697625},
-  html={https://dl.acm.org/doi/abs/10.1145/3658617.3697625},
-  pdf={metrex.pdf},
-  booktitle={Proceedings of the 30th Asia and South Pacific Design Automation Conference},
-  pages={995--1001},
-  year={2025},
-  abstract={Approximate computing is an emerging paradigm where design accuracy can be traded for improvements in design metrics such as design area and power consumption. In this work, we overview our open-source tool, BLASYS, for synthesis of approximate circuits using Boolean Matrix Factorization (BMF). In our methodology the truth table of a given circuit is approximated using BMF to a controllable approximation degree, and the results of the factorization are used to synthesize the approximate circuit output. BLASYS scales up the computations to large circuits through the use of partition techniques, where an input circuit is partitioned into a number of interconnected subcircuits and then a design-space exploration technique identifies the best order for subcircuit approximations. BLASYS leads to a graceful trade-off between accuracy and full circuit complexity as measured by design area. Using an open- source design flow, we extensively evaluate our methodology on a number of benchmarks, where we demonstrate that the proposed methodology can achieve on average 48.14% in area savings, while introducing an average relative error of 5%.}
-}
-
 @inproceedings{ma2025ff,
   abbr={DAC},
   selected={true},
@@ -45,17 +14,18 @@
   abstract={Backpropagation has been the cornerstone of neural network training for decades, yet its inefficiencies in time and energy consumption limit its suitability for resource-constrained edge devices. While low-precision neural network quantization has been extensively researched to speed up model inference, its application in training has been less explored. Recently, the Forward-Forward (FF) algorithm has emerged as a promising alternative to backpropagation, replacing the backward pass with an additional forward pass. By avoiding the need to store intermediate activations for backpropagation, FF can reduce memory footprint, making it well-suited for embedded devices. This paper presents an INT8 quantized training approach that leverages FF's layer-by-layer strategy to stabilize gradient quantization. Furthermore, we propose a novel "look-ahead" scheme to address limitations of FF and improve model accuracy. Experiments conducted on NVIDIA Jetson Orin Nano board demonstrate 4.6% faster training, 8.3% energy savings, and 27.0% reduction in memory usage, while maintaining competitive accuracy compared to the state-of-the-art.}
 }
 
-@inproceedings{ma2023ruca,
+@inproceedings{abdelatty2025metrex,
   abbr={ASPDAC},
-  title={RUCA: Runtime configurable approximate circuits with self-correcting capability},
-  author={Ma, Jingxiao and Reda, Sherief},
-  doi={10.1145/3566097.3567888},
-  html={https://dl.acm.org/doi/abs/10.1145/3566097.3567888},
-  pdf={ruca.pdf},
-  booktitle={Proceedings of the 28th Asia and South Pacific Design Automation Conference},
-  pages={140--145},
-  year={2023},
-  abstract={Approximate computing is an emerging computing paradigm that offers improved power consumption by relaxing the requirement for full accuracy. Since the requirements for accuracy may vary according to specific real-world applications, one trend of approximate computing is to design quality-configurable circuits, which are able to switch at runtime among different accuracy modes with different power and delay. In this paper, we present a novel framework RUCA which aims to synthesize runtime configurable approximate circuits based on arbitrary input circuits. By decomposing the truth table, our approach aims to approximate and separate the input circuit into multiple configuration blocks which support different accuracy levels, including a corrector circuit to restore full accuracy. Power gating is used to activate different blocks, such that the approximate circuit is able to operate at different accuracy-power configurations. To improve the scalability of our algorithm, we also provide a design space exploration scheme with circuit partitioning. We evaluate our methodology on a comprehensive set of benchmarks. For 3-level designs, RUCA saves power consumption by 43.71% within 2% error and by 30.15% within 1% error on average.}
+  title={Metrex: A benchmark for verilog code metric reasoning using llms},
+  selected={true},
+  author={Abdelatty, Manar and Ma, Jingxiao and Reda, Sherief},
+  doi={10.1145/3658617.3697625},
+  html={https://dl.acm.org/doi/abs/10.1145/3658617.3697625},
+  pdf={metrex.pdf},
+  booktitle={Proceedings of the 30th Asia and South Pacific Design Automation Conference},
+  pages={995--1001},
+  year={2025},
+  abstract={Large Language Models (LLMs) have been applied to various hardware design tasks, including Verilog code generation, EDA tool scripting, and RTL bug fixing. Despite this extensive exploration, LLMs are yet to be used for the task of post-synthesis metric reasoning and estimation of HDL designs. In this paper, we assess the ability of LLMs to reason about post-synthesis metrics of Verilog designs. We introduce MetRex, a large-scale dataset comprising 25,868 Verilog HDL designs and their corresponding post-synthesis metrics, namely area, delay, and static power. MetRex incorporates a Chain of Thought (CoT) template to enhance LLMs' reasoning about these metrics. Extensive experiments show that Supervised Fine-Tuning (SFT) boosts the LLM's reasoning capabilities on average by 37.0%, 25.3%, and 25.7% on the area, delay, and static power, respectively. While SFT improves performance on our benchmark, it remains far from achieving optimal results, especially on complex problems. Comparing to state-of-the-art regression models, our approach delivers accurate post-synthesis predictions for 17.4% more designs (within a 5% error margin), in addition to offering a 1.7x speedup by eliminating the need for pre-processing. This work lays the groundwork for advancing LLM-based Verilog code metric reasoning.}
 }
 
 @inproceedings{ma2023wenet,
@@ -73,26 +43,58 @@
   abstract={Deep Neural Networks (DNN) are widely deployed in resource-limited edge devices. Due to the limitation of computational resources, it is important to meet the timing and energy constraints while maintaining a high level of accuracy. To deploy the same DNN model on different edge devices, one challenge is to train a dynamic neural network with the flexibility of balancing the trade-off between accuracy and efficiency at runtime. In this paper, we present a novel methodology, dynamic Weight-enabling Network (WeNet), where the weights of neural network can be dynamically enabled or disabled to switch between different sub- networks, so that we are able to balance the trade-off between inference time, energy consumption and model accuracy. We extend the methodology to convolutional layers using group convolution and channel shuffling. We also propose a design space exploration approach to search for the optimal sub-network for different scenarios. We thoroughly evaluate our methodology using a number of DNN architectures on different hardware platforms, showing that WeNet provides a large number of energy-efficient operation modes, 73.2% of which provide better accuracy-efficiency trade-off compared to other methodologies.}
 }
 
+@inproceedings{ma2023ruca,
+  abbr={ASPDAC},
+  title={RUCA: Runtime configurable approximate circuits with self-correcting capability},
+  author={Ma, Jingxiao and Reda, Sherief},
+  doi={10.1145/3566097.3567888},
+  html={https://dl.acm.org/doi/abs/10.1145/3566097.3567888},
+  pdf={ruca.pdf},
+  booktitle={Proceedings of the 28th Asia and South Pacific Design Automation Conference},
+  pages={140--145},
+  year={2023},
+  abstract={Approximate computing is an emerging computing paradigm that offers improved power consumption by relaxing the requirement for full accuracy. Since the requirements for accuracy may vary according to specific real-world applications, one trend of approximate computing is to design quality-configurable circuits, which are able to switch at runtime among different accuracy modes with different power and delay. In this paper, we present a novel framework RUCA which aims to synthesize runtime configurable approximate circuits based on arbitrary input circuits. By decomposing the truth table, our approach aims to approximate and separate the input circuit into multiple configuration blocks which support different accuracy levels, including a corrector circuit to restore full accuracy. Power gating is used to activate different blocks, such that the approximate circuit is able to operate at different accuracy-power configurations. To improve the scalability of our algorithm, we also provide a design space exploration scheme with circuit partitioning. We evaluate our methodology on a comprehensive set of benchmarks. For 3-level designs, RUCA saves power consumption by 43.71% within 2% error and by 30.15% within 1% error on average.}
+}
+
+@article{ma2021approximate,
+  abbr={IEEE TCAD},
+  selected={true},
+  title={Approximate logic synthesis using Boolean matrix factorization},
+  author={Ma, Jingxiao and Hashemi, Soheil and Reda, Sherief},
+  doi={10.1109/TCAD.2021.3054603},
+  html={https://ieeexplore.ieee.org/abstract/document/9335989},
+  journal={IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems},
+  volume={41},
+  number={1},
+  pages={15--28},
+  year={2021},
+  publisher={IEEE},
+  abstract={Approximate computing is an emerging computing paradigm offering benefits in hardware metrics, such as design area and power consumption, by relaxing the requirement for full accuracy. In circuit design, a major challenge is to synthesize approximate circuits automatically from input exact circuits requiring minimal expert input. In this work, we present a method for approximate logic synthesis based on the Boolean matrix factorization, where an arbitrary input circuit can be approximated in a controlled fashion. Our methodology enables automatic computation of the dominant elements, bases, of the truth table of the circuit, and later combines the bases to approximate the original truth table. Such compression can reduce the complexity of the hardware implementation significantly, while introducing variable degrees of inaccuracy. Furthermore, in our approach, the factorization algorithm can be fine tuned as required by the application, to effectively improve control over degree of approximation. In this work, we provide a unified approach enabling the factorization algorithm to utilize semiring algebra, field algebra, and a combination of both for truth table factorization. In addition, we provide an automatic circuit partitioning approach and a design space exploration heuristic to navigate the search space. We implement our methodology using a full stack of open-source tools, and thoroughly evaluate our methodology on a number of representative circuits showcasing the benefits of our proposed methodology for approximate logic synthesis. Finally, we compare our methodology against an existing library of approximate designs and demonstrate state-of-the-art performance.}
+}
+
+@article{ma2021runtime,
+  abbr={IWLS},
+  title={Runtime Configurable Approximate Circuits using Boolean Matrix Factorization},
+  author={Ma, Jingxiao and Reda, Sherief},
+  html={https://www.iwls.org/iwls2021/program.php},
+  journal={Proceedings of the 30th International Workshop on Logic & Synthesis},
+  year={2021},
+  video={https://www.youtube.com/watch?v=bqFeMCCr6ns}
+}
+
+
 @article{ma2025approximate,
   abbr={WOSET},
   title={Approximate logic synthesis using BLASYS},
   author={Ma, Jingxiao and Hashemi, Soheil and Reda, Sherief},
   html={https://woset-workshop.github.io/PDFs/2019/a5.pdf},
   pdf={blasys.pdf},
-  journal={Workshop on Open-Source EDA Technology},
+  journal={Proceedings of the Workshop on Open-Source EDA Technology},
   video={https://www.youtube.com/watch?v=RrKf1SGK5yw},
   year={2019},
   abstract={Approximate computing is an emerging paradigm where design accuracy can be traded for improvements in design metrics such as design area and power consumption. In this work, we overview our open-source tool, BLASYS, for synthesis of approximate circuits using Boolean Matrix Factorization (BMF). In our methodology the truth table of a given circuit is approximated using BMF to a controllable approximation degree, and the results of the factorization are used to synthesize the approximate circuit output. BLASYS scales up the computations to large circuits through the use of partition techniques, where an input circuit is partitioned into a number of interconnected subcircuits and then a design-space exploration technique identifies the best order for subcircuit approximations. BLASYS leads to a graceful trade-off between accuracy and full circuit complexity as measured by design area. Using an open- source design flow, we extensively evaluate our methodology on a number of benchmarks, where we demonstrate that the proposed methodology can achieve on average 48.14% in area savings, while introducing an average relative error of 5%.}
 }
 
 
-@article{ma2023runtime,
-  abbr={IWLS},
-  title={Runtime Configurable Approximate Circuits using Boolean Matrix Factorization},
-  author={Ma, Jingxiao and Reda, Sherief},
-  html={https://www.iwls.org/iwls2021/program.php},
-  journal={30th International Workshop on Logic & Synthesis},
-  year={2021},
-  video={https://www.youtube.com/watch?v=bqFeMCCr6ns}
-}
+
 
