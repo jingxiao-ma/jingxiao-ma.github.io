@@ -8,15 +8,26 @@
   selected={true},
   title={Approximate logic synthesis using Boolean matrix factorization},
   author={Ma, Jingxiao and Hashemi, Soheil and Reda, Sherief},
+  doi={10.1109/TCAD.2021.3054603},
+  url={https://ieeexplore.ieee.org/abstract/document/9335989},
   journal={IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems},
   volume={41},
   number={1},
   pages={15--28},
   year={2021},
   publisher={IEEE},
-  doi={10.1109/TCAD.2021.3054603},
-  url={https://ieeexplore.ieee.org/abstract/document/9335989},
   abstract={Approximate computing is an emerging computing paradigm offering benefits in hardware metrics, such as design area and power consumption, by relaxing the requirement for full accuracy. In circuit design, a major challenge is to synthesize approximate circuits automatically from input exact circuits requiring minimal expert input. In this work, we present a method for approximate logic synthesis based on the Boolean matrix factorization, where an arbitrary input circuit can be approximated in a controlled fashion. Our methodology enables automatic computation of the dominant elements, bases, of the truth table of the circuit, and later combines the bases to approximate the original truth table. Such compression can reduce the complexity of the hardware implementation significantly, while introducing variable degrees of inaccuracy. Furthermore, in our approach, the factorization algorithm can be fine tuned as required by the application, to effectively improve control over degree of approximation. In this work, we provide a unified approach enabling the factorization algorithm to utilize semiring algebra, field algebra, and a combination of both for truth table factorization. In addition, we provide an automatic circuit partitioning approach and a design space exploration heuristic to navigate the search space. We implement our methodology using a full stack of open-source tools, and thoroughly evaluate our methodology on a number of representative circuits showcasing the benefits of our proposed methodology for approximate logic synthesis. Finally, we compare our methodology against an existing library of approximate designs and demonstrate state-of-the-art performance.}
+}
+
+@article{ma2025approximate,
+  abbr={WOSET'19},
+  title={Approximate logic synthesis using BLASYS},
+  author={Ma, Jingxiao and Hashemi, Soheil and Reda, Sherief},
+  url={https://woset-workshop.github.io/PDFs/2019/a5.pdf},
+  pdf={blasys.pdf},
+  journal={Workshop on Open-Source EDA Technology},
+  year={2019},
+  abstract={Approximate computing is an emerging paradigm where design accuracy can be traded for improvements in design metrics such as design area and power consumption. In this work, we overview our open-source tool, BLASYS, for synthesis of approximate circuits using Boolean Matrix Factorization (BMF). In our methodology the truth table of a given circuit is approximated using BMF to a controllable approximation degree, and the results of the factorization are used to synthesize the approximate circuit output. BLASYS scales up the computations to large circuits through the use of partition techniques, where an input circuit is partitioned into a number of interconnected subcircuits and then a design-space exploration technique identifies the best order for subcircuit approximations. BLASYS leads to a graceful trade-off between accuracy and full circuit complexity as measured by design area. Using an open- source design flow, we extensively evaluate our methodology on a number of benchmarks, where we demonstrate that the proposed methodology can achieve on average 48.14% in area savings, while introducing an average relative error of 5%.}
 }
 
 @book{einstein1920relativity,
