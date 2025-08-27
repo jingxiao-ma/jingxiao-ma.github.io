@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Successfully defended Ph.D. thesis *Approximate Computing Techniques: From Logic Synthesis to Deep Learning*.
+Successfully defended Ph.D. thesis [*Approximate Computing Techniques: From Logic Synthesis to Deep Learning*](https://scale-lab.github.io/pdfs/jingxiao.pdf).
