@@ -8,4 +8,8 @@ category: research
 related_publications: true
 ---
 
-BMF / runtime configurable
+Please refer to the Github Repo: [https://github.com/scale-lab/BLASYS](https://github.com/scale-lab/BLASYS) and following papers:
+
+- RUCA: Runtime configurable approximate circuits with self-correcting capability {% cite ma2023ruca *}
+- Approximate logic synthesis using Boolean matrix factorization {% cite ma2021approximate *}
+- Approximate logic synthesis using BLASYS {% cite ma2025approximate *}
