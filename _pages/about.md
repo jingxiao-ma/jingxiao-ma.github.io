@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: where Intelligence Meets Efficiency
+subtitle: *where Intelligence Meets Efficiency*
 
 profile:
   align: right
