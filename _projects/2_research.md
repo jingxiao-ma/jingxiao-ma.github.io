@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Hardware Metric Analysis using LLMs
+title: Hardware Metric Reasoning using LLMs
 description: A benchmark for Verilog code metric reasoning using fine-tuned Large Language Models (LLMs)
 img: assets/img/MetRex_intro.jpg
 importance: 2
