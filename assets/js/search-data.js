@@ -52,6 +52,11 @@ ninja.data = [{
           description: "with background image",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project.html";
+            },},{id: "projects-large-scale-approximate-computing",
+          title: 'Large-scale Approximate Computing',
+          description: "Approximate logic synthesis using Boolean Matrix Factorization",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/1_research.html";
             },},{id: "projects-project-2",
           title: 'project 2',
           description: "a project with a background image and giscus comments",
