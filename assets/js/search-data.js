@@ -82,6 +82,11 @@ ninja.data = [{
           description: "another without an image",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_project.html";
+            },},{id: "projects-dynamic-neural-network-with-weight-enabling-scheme",
+          title: 'Dynamic Neural Network with Weight-Enabling Scheme',
+          description: "A dynamic neural network framework that adaptively enables or disables weights during inference to balance accuracy and efficiency",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/4_research.html";
             },},{id: "projects-project-5",
           title: 'project 5',
           description: "a project with a background image",
