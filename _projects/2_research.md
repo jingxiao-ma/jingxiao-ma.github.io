@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Hardware Metric Analysis using LLMs
-description: A benchmark for Verilog code metric reasoning using fine-tuned LLMs
+description: A benchmark for Verilog code metric reasoning using fine-tuned Large Language Models (LLMs)
 img: assets/img/MetRex_intro.jpg
 importance: 2
 category: research
@@ -39,14 +39,16 @@ By integrating reasoning steps into dataset annotations, MetRex helps LLMs move 
 
 ### Key Contributions
 
+Paper *Metrex: A benchmark for verilog code metric reasoning using llms*{% cite abdelatty2025metrex %} is published in ASPDAC'25.
+
+GitHub repo is available at [https://github.com/scale-lab/MetRex](https://github.com/scale-lab/MetRex).
+
 The project makes four main contributions:
 - Benchmark Dataset: MetRex introduces the first large-scale dataset for metric reasoning, covering diverse Verilog sources such as RTL-Coder, VeriGen, ISCAS benchmarks, OpenCores, and NVDLA designs.
 - Automated Workflow: A synthesis-and-repair loop integrates LLMs with tools like Yosys, Icarus Verilog, and Cadence Genus to fix errors and annotate metrics automatically.
 - Chain-of-Thought Reasoning: The CoT template provides interpretable reasoning steps for metric estimation, improving accuracy compared to direct prompting by up to 8.9% across different metrics.
 - Supervised Fine-Tuning (SFT): Fine-tuning LLMs with MetRex improves performance by 37.0% (area), 25.3% (delay), and 25.7% (static power) compared to few-shot prompting.
 - Comparative Analysis: Against regression-based baselines such as MasterRTL, MetRex-trained LLMs achieve up to 17.4% higher accuracy within 5% error margins, while also being 1.7× faster by eliminating preprocessing.
-
-Paper *Metrex: A benchmark for verilog code metric reasoning using llms*{% cite abdelatty2025metrex %} is published in ASPDAC'25.
 
 ### Broader Impact
 
