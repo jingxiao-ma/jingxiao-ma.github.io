@@ -47,71 +47,26 @@ ninja.data = [{
           section: "News",},{id: "news-presented-my-work-ff-int8-efficient-forward-forward-dnn-training-on-edge-devices-with-int8-precision-at-the-design-automation-conference-dac-25",
           title: 'Presented my work FF-INT8: Efficient Forward-Forward DNN Training on Edge Devices with INT8...',
           description: "",
-          section: "News",},{id: "projects-project-1",
-          title: 'project 1',
-          description: "with background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/1_project.html";
-            },},{id: "projects-large-scale-approximate-computing",
+          section: "News",},{id: "projects-large-scale-approximate-computing",
           title: 'Large-scale Approximate Computing',
           description: "Approximate logic synthesis using Boolean Matrix Factorization",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_research.html";
-            },},{id: "projects-project-2",
-          title: 'project 2',
-          description: "a project with a background image and giscus comments",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/2_project.html";
             },},{id: "projects-hardware-metric-reasoning-using-llms",
           title: 'Hardware Metric Reasoning using LLMs',
           description: "A benchmark for Verilog code metric reasoning using fine-tuned Large Language Models (LLMs)",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_research.html";
-            },},{id: "projects-project-3-with-very-long-name",
-          title: 'project 3 with very long name',
-          description: "a project that redirects to another website",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/3_project.html";
             },},{id: "projects-low-precision-training-of-deep-neural-network",
           title: 'Low-Precision Training of Deep Neural Network',
           description: "An INT8-quantized training framework built upon the Forward-Forward algorithm, enabling efficient and memory-light deep learning training on resource-constrained edge devices",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_research.html";
-            },},{id: "projects-project-4",
-          title: 'project 4',
-          description: "another without an image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/4_project.html";
             },},{id: "projects-dynamic-neural-network-with-weight-enabling-scheme",
           title: 'Dynamic Neural Network with Weight-Enabling Scheme',
           description: "A dynamic neural network framework that adaptively enables or disables weights during inference to balance accuracy and efficiency",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_research.html";
-            },},{id: "projects-project-5",
-          title: 'project 5',
-          description: "a project with a background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/5_project.html";
-            },},{id: "projects-project-6",
-          title: 'project 6',
-          description: "a project with no image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/6_project.html";
-            },},{id: "projects-project-7",
-          title: 'project 7',
-          description: "with background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/7_project.html";
-            },},{id: "projects-project-8",
-          title: 'project 8',
-          description: "an other project with a background image and giscus comments",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/8_project.html";
-            },},{id: "projects-project-9",
-          title: 'project 9',
-          description: "another project with an image 🎉",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/9_project.html";
             },},{
         id: 'social-email',
         title: 'email',
